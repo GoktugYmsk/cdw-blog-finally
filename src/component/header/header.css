@@ -1,0 +1,100 @@
+.solbar {
+  height: 100vh;
+  width: 853px;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 0.4;
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 29px;
+  width: 40px;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 59px;
+  left: 1300px;
+}
+
+.hamburger-line {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+.close-button {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+
+.close-button::before,
+.close-button::after {
+  content: "";
+  position: absolute;
+  top: 74px;
+  left: 1320px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-button::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.filigran {
+  border: 2px solid red;
+  background: rgb(230, 230, 230);
+  position: absolute;
+  height: 100vh;
+  left: 300px;
+  width: 200px;
+  display: flex;
+}
+
+.icons {
+  display: flex;
+  position: absolute;
+  top: 650px;
+  left: 280px;
+}
+
+.facebook {
+  width: 40px;
+  height: 40px;
+  left: 20px;
+  position: absolute;
+}
+
+.instagram {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 80px;
+}
+
+.twitter {
+  width: 40px;
+  height: 40px;
+  left: 140px;
+  position: absolute;
+}
+
+.youtube {
+  width: 40px;
+  height: 40px;
+  left: 200px;
+  position: absolute;
+}

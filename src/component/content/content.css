@@ -1,0 +1,49 @@
+.selectedbox {
+    margin-left: 100px;
+    width: 300px;
+    height: 200px;
+    margin-top: 100px;
+    position: absolute;
+    color: white;
+    opacity: 1;
+}
+.h1 {
+    margin-bottom: 64px;
+    position: absolute;
+    top: 150px;
+}
+.selectedbox h3 {
+    font-size: 20px;
+    display: flex;
+    float: left;
+}
+.selectedbox p {
+    font-size: 10px;
+    display: flex;
+    padding-bottom: 100px;
+    margin-left: 80px;
+    margin-top: 25px;
+}
+.h3{
+    position: absolute;
+    top: 115px;
+}
+.typeSelected{
+    color: white;
+    width: 126px;
+    font-size: 10px;
+    position: absolute  ;
+    top: 230px;
+    left: 180px;
+}
+.seeProject{
+    position: absolute;
+    top: 380px;
+    color: white;
+    left: 103px;
+}
+.chevron{
+    position: absolute;
+    top: 3px;
+    left: 90px;
+}

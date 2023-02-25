@@ -1,0 +1,39 @@
+.item {
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    color: white;;
+}
+
+.content-id {
+    text-align: left;
+    font: normal normal bold 39px/47px Paralucent;
+    letter-spacing: 0px;
+    font-size: 30px;
+}
+
+.content-name {
+    text-align: left;
+    font: normal normal 300 20px/24px Paralucent;
+    letter-spacing: 0.4px;
+    padding-bottom: 5px;
+}
+
+.item-selected {
+    background: rgb(255, 255, 255) 0% 0% no-repeat padding-box !important;
+    opacity: 1;
+}
+
+.item-selected hr {
+    color: white;
+    
+}
+
+.item hr {
+    height: 8px;
+    background: rgb(255, 255, 255) 0% 0% no-repeat padding-box;
+    width: 300px;
+}
+.empty{
+    opacity: 0.2;
+}

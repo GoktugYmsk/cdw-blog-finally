@@ -1,0 +1,39 @@
+.chat {
+  height: 100vh;
+  width: 800px;
+  background: var(--black) 0% 0% no-repeat padding-box;
+  background: #000000 0% 0% no-repeat padding-box;
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+  display: none;
+  position: absolute;
+  width: 100vh;
+  left: 655px;
+}
+
+.chat p {
+  position: absolute;
+  color: white;
+  left: 300px;
+  top: 150px;
+  font-size: 40px;
+}
+
+.ptwo {
+  margin-top: 90px;
+}
+
+.pthree {
+  margin-top: 150px;
+}
+
+.pfour {
+  margin-top: 210px;
+}
+
+.cdw {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  top: 59px;
+  left: 100px;
+}

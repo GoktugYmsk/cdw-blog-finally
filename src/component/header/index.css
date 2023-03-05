@@ -74,7 +74,7 @@
 .facebook {
   width: 40px;
   height: 40px;
-  left: 20px;
+  right: 20px;
   position: absolute;
 }
 
@@ -82,19 +82,23 @@
   width: 40px;
   height: 40px;
   position: absolute;
-  left: 80px;
+  left: 40px;
 }
 
 .twitter {
   width: 40px;
   height: 40px;
-  left: 140px;
+  left: 130px;
   position: absolute;
 }
 
 .youtube {
   width: 40px;
   height: 40px;
-  left: 200px;
+  left: 220px;
   position: absolute;
+}
+
+.hamburger-active {
+  display: flex;
 }

@@ -4,10 +4,26 @@
   background: var(--black) 0% 0% no-repeat padding-box;
   background: #000000 0% 0% no-repeat padding-box;
   clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
-  display: none;
   position: absolute;
+  display: none;
   width: 100vh;
   left: 655px;
+  z-index: 2;animation-name: slide-in;
+  animation-duration: 0.5s;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.chatActive {
+  display: flex;
 }
 
 .chat p {
@@ -36,4 +52,21 @@
   height: 40px;
   top: 59px;
   left: 100px;
+}
+.cdwActive{
+  opacity: 0.4;
+}
+
+.close {
+  background:none;
+  color: white;
+  height: 40px;
+  font-size: 60px;
+  border: none;
+  padding: 10px 16px;
+  text-align: center;
+  position: relative;
+  left: 120px;
+  top: 34px;
+  cursor: pointer;
 }

@@ -2,7 +2,11 @@
     padding-left: 20px;
     padding-right: 20px;
     cursor: pointer;
-    color: white;;
+    color: white;
+    ;
+}
+.itemOpacity{
+    opacity: 0.4;
 }
 
 .content-id {
@@ -26,7 +30,7 @@
 
 .item-selected hr {
     color: white;
-    
+
 }
 
 .item hr {
@@ -34,6 +38,7 @@
     background: rgb(255, 255, 255) 0% 0% no-repeat padding-box;
     width: 300px;
 }
-.empty{
+
+.empty {
     opacity: 0.2;
 }

@@ -8,7 +8,8 @@
   display: none;
   width: 100vh;
   left: 655px;
-  z-index: 2;animation-name: slide-in;
+  z-index: 2;
+  animation-name: slide-in;
   animation-duration: 0.5s;
 }
 
@@ -53,12 +54,13 @@
   top: 59px;
   left: 100px;
 }
-.cdwActive{
+
+.cdwActive {
   opacity: 0.4;
 }
 
 .close {
-  background:none;
+  background: none;
   color: white;
   height: 40px;
   font-size: 60px;
@@ -69,4 +71,49 @@
   left: 120px;
   top: 34px;
   cursor: pointer;
+}
+
+.filigran {
+  border: 2px solid red;
+  background: rgb(230, 230, 230);
+  position: absolute;
+  height: 100vh;
+  left: 300px;
+  width: 200px;
+  display: flex;
+}
+
+.icons {
+  display: flex;
+  position: absolute;
+  top: 650px;
+  left: 280px;
+}
+
+.facebook {
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  position: absolute;
+}
+
+.instagram {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 40px;
+}
+
+.twitter {
+  width: 40px;
+  height: 40px;
+  left: 130px;
+  position: absolute;
+}
+
+.youtube {
+  width: 40px;
+  height: 40px;
+  left: 220px;
+  position: absolute;
 }

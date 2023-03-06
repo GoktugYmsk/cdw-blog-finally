@@ -1,20 +1,23 @@
 import { useEffect, useState } from "react";
+
+import Content from "./component/content";
+import Header from "./component/header";
+import Menu from "./component/menu";
+import Slider from "./component/slider";
+
+import { initialData } from "./assets/data";
 import './App.css'
-import Content from "./component/content/index";
-import SliderItem from "./component/sliderItem/index.js"
-import { initialData } from "./data.js";
-import Header from "./component/header/index";
-import Menu from "./component/menu/index";
 
 function App() {
   const [list, setList] = useState(initialData);
   const [selected, setSelected] = useState(null);
   const [isHamburger, setIsHamburger] = useState(true)
 
-  function allHamburger() {
+  const allHamburger = () => {
     setIsHamburger(!isHamburger);
   }
-  function handleItem(item) {
+
+  const handleItem = (item) => {
     list.map((listItem) => {
       if (listItem?.id === item?.id) {
         listItem.selected = true;
@@ -25,28 +28,25 @@ function App() {
     });
     setList(list);
   };
+
   useEffect(() => {
     const selectedItem = list.find((item) => item.selected);
     setSelected(selectedItem);
   }, []);
+
   return (
     <div className="App" style={{ backgroundImage: `url(${selected?.image})` }}>
       <div className="publicContainer" >
         <Menu isHamburger={isHamburger} allHamburger={allHamburger} />
         <Header isHamburger={isHamburger} allHamburger={allHamburger} />
         {selected && (
-          <Content key={selected.id} selected={selected} isHamburger={isHamburger} />
+          <Content selected={selected} isHamburger={isHamburger} />
         )}
-        <div className="container">
-          {list.map((item) => {
-            return (
-              <SliderItem key={item.id} item={item} handleItem={handleItem} isHamburger={isHamburger} />
-            );
-          })}
-        </div>
+        <Slider list={list} handle={handleItem} hamburger={isHamburger} />
       </div>
     </div>
   );
 };
 
 export default App;
+

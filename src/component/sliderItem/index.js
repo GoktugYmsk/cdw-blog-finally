@@ -1,7 +1,8 @@
 import React from 'react'
+
 import './index.css'
 
-function SliderItem({ item, handleItem,isHamburger }) {
+function SliderItem({ item, handleItem, isHamburger }) {
     return (
         <div >
             <div className={`item ${isHamburger ? '' : 'itemOpacity'}`} onClick={() => handleItem(item)} >
@@ -12,4 +13,5 @@ function SliderItem({ item, handleItem,isHamburger }) {
         </div>
     )
 }
+
 export default SliderItem

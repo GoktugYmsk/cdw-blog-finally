@@ -1,8 +1,9 @@
 import React from 'react'
-import './index.css'
 import { FaChevronRight } from "react-icons/fa"
 
-function Content({ selected,isHamburger }) {
+import './index.css'
+
+function Content({ selected, isHamburger }) {
   return (
     <div>
       <div className={`selectedbox ${isHamburger ? '' : 'selectedOpacity'}`} >
